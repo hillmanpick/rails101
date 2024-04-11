@@ -15,7 +15,6 @@
       <% @groups.each do |group| %>
         <tr>
           <td>#</td>
-          <% if current_user && current_user == group.user%>
           <td><%= link_to(group.title, group_path(group)) %></td>
           <td><%= group.description %></td>
           <td><%= group.user.email%></td>
